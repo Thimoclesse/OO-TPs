@@ -1,0 +1,55 @@
+2024-10-14T09:55:35.278+02:00  INFO 14621 --- [myServiceClient] [main] c.e.m.MyServiceClientApplication         : Starting MyServiceClientApplication v0.0.1-SNAPSHOT using Java 22.0.2 with PID 14621 (/Users/theotime/IdeaProjects/00-Hello-Car/myServiceClient/build/libs/myServiceClient-0.0.1-SNAPSHOT.jar started by theotime in /Users/theotime/IdeaProjects/00-Hello-Car/myServiceClient)
+2024-10-14T09:55:35.287+02:00 DEBUG 14621 --- [myServiceClient] [main] c.e.m.MyServiceClientApplication         : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-10-14T09:55:35.288+02:00  INFO 14621 --- [myServiceClient] [main] c.e.m.MyServiceClientApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T09:55:35.694+02:00  INFO 14621 --- [myServiceClient] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-14T09:55:35.702+02:00  INFO 14621 --- [myServiceClient] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-14T09:55:35.702+02:00  INFO 14621 --- [myServiceClient] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-14T09:55:35.718+02:00  INFO 14621 --- [myServiceClient] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-14T09:55:35.718+02:00  INFO 14621 --- [myServiceClient] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 400 ms
+2024-10-14T09:55:35.777+02:00  INFO 14621 --- [myServiceClient] [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2024-10-14T09:55:35.995+02:00  INFO 14621 --- [myServiceClient] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-14T09:55:36.004+02:00  INFO 14621 --- [myServiceClient] [main] c.e.m.MyServiceClientApplication         : Started MyServiceClientApplication in 0.949 seconds (process running for 1.185)
+2024-10-14T09:55:41.588+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-14T09:55:41.588+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-14T09:55:41.589+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-14T09:55:41.608+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-1] c.e.myServiceClient.service.MyService    : Hello world
+2024-10-14T09:55:45.571+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-2] c.e.myServiceClient.service.CarService   : Récupération de toutes les voitures...
+2024-10-14T09:55:45.574+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-2] c.e.myServiceClient.service.CarService   : FEUR
+2024-10-14T09:55:45.604+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-2] c.e.myServiceClient.service.CarService   : On va return
+2024-10-14T09:56:17.618+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-4] c.e.myServiceClient.service.CarService   : Récupération de toutes les voitures...
+2024-10-14T09:56:17.619+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-4] c.e.myServiceClient.service.CarService   : FEUR
+2024-10-14T09:56:17.633+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-4] c.e.myServiceClient.service.CarService   : On va return
+2024-10-14T09:56:33.035+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-5] c.e.myServiceClient.service.CarService   : Récupération de la voiture avec la plaque : 11AA22
+2024-10-14T09:56:33.051+02:00 ERROR 14621 --- [myServiceClient] [http-nio-8080-exec-5] c.e.myServiceClient.service.CarService   : Voiture avec la plaque 11AA22 non trouvée.
+2024-10-14T09:56:38.878+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-6] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : 11AA22
+2024-10-14T09:56:38.894+02:00 ERROR 14621 --- [myServiceClient] [http-nio-8080-exec-6] c.e.myServiceClient.service.CarService   : Voiture avec la plaque 11AA22 non trouvée.
+2024-10-14T09:56:49.320+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-8] c.e.myServiceClient.service.CarService   : Récupération de la voiture avec la plaque : ABC123
+2024-10-14T09:56:54.084+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-9] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : ABC123
+2024-10-14T09:57:00.511+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-10] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : ABC123
+2024-10-14T09:57:05.423+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-1] c.e.myServiceClient.service.CarService   : Récupération de la voiture avec la plaque : ABC123
+2024-10-14T09:57:11.646+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-2] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : ABC123
+2024-10-14T09:57:12.355+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-3] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : ABC123
+2024-10-14T09:57:12.685+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-4] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : ABC123
+2024-10-14T09:57:15.520+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-5] c.e.myServiceClient.service.CarService   : Récupération de la voiture avec la plaque : ABC123
+2024-10-14T09:57:20.717+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-6] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : ABC123
+2024-10-14T09:57:21.449+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-7] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : ABC123
+2024-10-14T09:57:22.142+02:00  INFO 14621 --- [myServiceClient] [http-nio-8080-exec-8] c.e.myServiceClient.service.CarService   : Récuperation de la voiture avec la plaque : ABC123
+2024-10-14T13:40:46.605+02:00  INFO 21405 --- [myServiceClient] [Test worker] c.e.m.MyServiceClientApplicationTests    : Starting MyServiceClientApplicationTests using Java 22.0.2 with PID 21405 (started by theotime in /Users/theotime/IdeaProjects/00-Hello-Car/myServiceClient)
+2024-10-14T13:40:46.605+02:00 DEBUG 21405 --- [myServiceClient] [Test worker] c.e.m.MyServiceClientApplicationTests    : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-10-14T13:40:46.606+02:00  INFO 21405 --- [myServiceClient] [Test worker] c.e.m.MyServiceClientApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T13:40:46.889+02:00  INFO 21405 --- [myServiceClient] [Test worker] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2024-10-14T13:40:47.116+02:00  INFO 21405 --- [myServiceClient] [Test worker] c.e.m.MyServiceClientApplicationTests    : Started MyServiceClientApplicationTests in 0.637 seconds (process running for 1.062)
+2024-10-14T13:42:37.263+02:00  INFO 21635 --- [myServiceClient] [Test worker] c.e.m.MyServiceClientApplicationTests    : Starting MyServiceClientApplicationTests using Java 22.0.2 with PID 21635 (started by theotime in /Users/theotime/IdeaProjects/00-Hello-Car/myServiceClient)
+2024-10-14T13:42:37.263+02:00 DEBUG 21635 --- [myServiceClient] [Test worker] c.e.m.MyServiceClientApplicationTests    : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-10-14T13:42:37.264+02:00  INFO 21635 --- [myServiceClient] [Test worker] c.e.m.MyServiceClientApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T13:42:37.546+02:00  INFO 21635 --- [myServiceClient] [Test worker] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2024-10-14T13:42:37.844+02:00  INFO 21635 --- [myServiceClient] [Test worker] c.e.m.MyServiceClientApplicationTests    : Started MyServiceClientApplicationTests in 0.704 seconds (process running for 1.144)
+2024-10-14T13:42:38.278+02:00  INFO 21635 --- [myServiceClient] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.myServiceClient.WebServiceTest]: WebServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-14T13:42:38.286+02:00  INFO 21635 --- [myServiceClient] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.myServiceClient.MyServiceClientApplication for test class com.example.myServiceClient.WebServiceTest
+2024-10-14T13:42:38.298+02:00  INFO 21635 --- [myServiceClient] [Test worker] c.e.myServiceClient.WebServiceTest       : Starting WebServiceTest using Java 22.0.2 with PID 21635 (started by theotime in /Users/theotime/IdeaProjects/00-Hello-Car/myServiceClient)
+2024-10-14T13:42:38.298+02:00 DEBUG 21635 --- [myServiceClient] [Test worker] c.e.myServiceClient.WebServiceTest       : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-10-14T13:42:38.298+02:00  INFO 21635 --- [myServiceClient] [Test worker] c.e.myServiceClient.WebServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T13:42:38.486+02:00  INFO 21635 --- [myServiceClient] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-10-14T13:42:38.486+02:00  INFO 21635 --- [myServiceClient] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-10-14T13:42:38.487+02:00  INFO 21635 --- [myServiceClient] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-10-14T13:42:38.498+02:00  INFO 21635 --- [myServiceClient] [Test worker] c.e.myServiceClient.WebServiceTest       : Started WebServiceTest in 0.209 seconds (process running for 1.798)

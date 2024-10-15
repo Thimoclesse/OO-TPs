@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.lib";
+option java_outer_classname = "CarProto";
+
+// Message représentant une voiture
+message Car {
+  string plate_number = 1;  // Numéro de plaque
+  string brand = 2;         // Marque de la voiture
+  int32 price = 3;          // Prix de la voiture
+  bool rented = 4;          // Indique si la voiture est louée
+  int64 id = 5;             // Identifiant unique de la voiture
+}
+
+// Requête pour récupérer une voiture par son numéro de plaque
+message GetCarRequest {
+  string plate_number = 1;  // Numéro de plaque pour identifier la voiture
+}
+
+// Réponse contenant la voiture demandée
+message GetCarResponse {
+  Car car = 1;              // La voiture trouvée
+}
+
+// Requête pour récupérer toutes les voitures
+message GetAllCarsRequest {}
+
+// Réponse contenant une liste de toutes les voitures
+message GetAllCarsResponse {
+  repeated Car cars = 1;    // Liste des voitures
+}
+
+// Réponse contenant un boolean
+message rentGood {
+  bool actual_rent = 1;
+}
+
+message putRentCar {
+  string plate_number = 1;  // Numéro de plaque pour identifier la voiture
+  bool newStateRent = 2;
+}
+
+// Service pour gérer les voitures
+service carService {
+  rpc GetCar(GetCarRequest) returns (GetCarResponse);            // Récupérer une voiture par plaque
+  rpc GetAllCars(GetAllCarsRequest) returns (GetAllCarsResponse); // Récupérer toutes les voitures
+  rpc RentCar(putRentCar) returns (rentGood); // Récupérer toutes les voitures
+}
