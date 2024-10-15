@@ -1,52 +1,27 @@
-2024-10-14T09:55:30.592+02:00  INFO 14612 --- [myServiceServer] [main] c.e.m.MyServiceServerApplication         : Starting MyServiceServerApplication v0.0.1-SNAPSHOT using Java 22.0.2 with PID 14612 (/Users/theotime/IdeaProjects/00-Hello-Car/myServiceServer/build/libs/myServiceServer-0.0.1-SNAPSHOT.jar started by theotime in /Users/theotime/IdeaProjects/00-Hello-Car/myServiceServer)
-2024-10-14T09:55:30.598+02:00 DEBUG 14612 --- [myServiceServer] [main] c.e.m.MyServiceServerApplication         : Running with Spring Boot v3.3.3, Spring v6.1.12
-2024-10-14T09:55:30.598+02:00  INFO 14612 --- [myServiceServer] [main] c.e.m.MyServiceServerApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-10-14T09:55:30.820+02:00  INFO 14612 --- [myServiceServer] [main] c.e.myServiceServer.MyCarServiceImpl     : Ajout des voitures
-2024-10-14T09:55:30.855+02:00  INFO 14612 --- [myServiceServer] [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
-2024-10-14T09:55:30.961+02:00  INFO 14612 --- [myServiceServer] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: carService, bean: myCarServiceImpl, class: com.example.myServiceServer.MyCarServiceImpl
-2024-10-14T09:55:30.962+02:00  INFO 14612 --- [myServiceServer] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: com.example.MyService, bean: myServiceImpl, class: com.example.myServiceServer.MyServiceImpl
-2024-10-14T09:55:30.962+02:00  INFO 14612 --- [myServiceServer] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
-2024-10-14T09:55:30.962+02:00  INFO 14612 --- [myServiceServer] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
-2024-10-14T09:55:31.024+02:00  INFO 14612 --- [myServiceServer] [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
-2024-10-14T09:55:31.034+02:00  INFO 14612 --- [myServiceServer] [main] c.e.m.MyServiceServerApplication         : Started MyServiceServerApplication in 0.666 seconds (process running for 0.897)
-2024-10-14T09:55:41.812+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.example.myServiceServer.MyServiceImpl  : sayHello => 
-2024-10-14T09:55:45.597+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Trouver toutes les voitures
-2024-10-14T09:56:17.626+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Trouver toutes les voitures
-2024-10-14T09:56:33.046+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Trouver la voiture : 11AA22
-2024-10-14T09:56:38.888+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : 11AA22. Si cela est possible
-2024-10-14T09:56:49.326+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Trouver la voiture : ABC123
-2024-10-14T09:56:54.088+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : ABC123. Si cela est possible
-2024-10-14T09:57:00.518+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : ABC123. Si cela est possible
-2024-10-14T09:57:05.427+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Trouver la voiture : ABC123
-2024-10-14T09:57:11.651+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : ABC123. Si cela est possible
-2024-10-14T09:57:12.360+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : ABC123. Si cela est possible
-2024-10-14T09:57:12.689+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : ABC123. Si cela est possible
-2024-10-14T09:57:15.524+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Trouver la voiture : ABC123
-2024-10-14T09:57:20.721+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : ABC123. Si cela est possible
-2024-10-14T09:57:21.455+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : ABC123. Si cela est possible
-2024-10-14T09:57:22.146+02:00  INFO 14612 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Réserve la voiture : ABC123. Si cela est possible
-2024-10-14T10:14:16.315+02:00  INFO 14612 --- [myServiceServer] [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
-2024-10-14T13:40:54.092+02:00  INFO 21418 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Starting MyServiceServerApplicationTests using Java 22.0.2 with PID 21418 (started by theotime in /Users/theotime/IdeaProjects/00-Hello-Car/myServiceServer)
-2024-10-14T13:40:54.094+02:00 DEBUG 21418 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Running with Spring Boot v3.3.3, Spring v6.1.12
-2024-10-14T13:40:54.094+02:00  INFO 21418 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2024-10-14T13:40:54.247+02:00  INFO 21418 --- [myServiceServer] [Test worker] c.e.myServiceServer.MyCarServiceImpl     : Ajout des voitures
-2024-10-14T13:40:54.276+02:00  INFO 21418 --- [myServiceServer] [Test worker] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
-2024-10-14T13:40:54.343+02:00  INFO 21418 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: carService, bean: myCarServiceImpl, class: com.example.myServiceServer.MyCarServiceImpl
-2024-10-14T13:40:54.344+02:00  INFO 21418 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: com.example.MyService, bean: myServiceImpl, class: com.example.myServiceServer.MyServiceImpl
-2024-10-14T13:40:54.344+02:00  INFO 21418 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
-2024-10-14T13:40:54.344+02:00  INFO 21418 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
-2024-10-14T13:40:54.386+02:00  INFO 21418 --- [myServiceServer] [Test worker] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
-2024-10-14T13:40:54.394+02:00  INFO 21418 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Started MyServiceServerApplicationTests in 0.415 seconds (process running for 0.817)
-2024-10-14T13:40:54.782+02:00  INFO 21418 --- [myServiceServer] [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
-2024-10-14T13:42:44.031+02:00  INFO 21654 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Starting MyServiceServerApplicationTests using Java 22.0.2 with PID 21654 (started by theotime in /Users/theotime/IdeaProjects/00-Hello-Car/myServiceServer)
-2024-10-14T13:42:44.032+02:00 DEBUG 21654 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Running with Spring Boot v3.3.3, Spring v6.1.12
-2024-10-14T13:42:44.032+02:00  INFO 21654 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2024-10-14T13:42:44.189+02:00  INFO 21654 --- [myServiceServer] [Test worker] c.e.myServiceServer.MyCarServiceImpl     : Ajout des voitures
-2024-10-14T13:42:44.216+02:00  INFO 21654 --- [myServiceServer] [Test worker] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
-2024-10-14T13:42:44.288+02:00  INFO 21654 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: carService, bean: myCarServiceImpl, class: com.example.myServiceServer.MyCarServiceImpl
-2024-10-14T13:42:44.288+02:00  INFO 21654 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: com.example.MyService, bean: myServiceImpl, class: com.example.myServiceServer.MyServiceImpl
-2024-10-14T13:42:44.288+02:00  INFO 21654 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
-2024-10-14T13:42:44.288+02:00  INFO 21654 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
-2024-10-14T13:42:44.327+02:00  INFO 21654 --- [myServiceServer] [Test worker] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
-2024-10-14T13:42:44.334+02:00  INFO 21654 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Started MyServiceServerApplicationTests in 0.418 seconds (process running for 0.823)
-2024-10-14T13:42:44.731+02:00  INFO 21654 --- [myServiceServer] [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2024-10-15T14:31:39.925+02:00  INFO 31588 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Starting MyServiceServerApplicationTests using Java 22.0.2 with PID 31588 (started by theotime in /Users/theotime/IdeaProjects/OO-TP/OO-lab-3/myServiceServer)
+2024-10-15T14:31:39.929+02:00 DEBUG 31588 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-10-15T14:31:39.929+02:00  INFO 31588 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-10-15T14:31:40.103+02:00  INFO 31588 --- [myServiceServer] [Test worker] c.e.myServiceServer.MyCarServiceImpl     : Ajout des voitures
+2024-10-15T14:31:40.133+02:00  INFO 31588 --- [myServiceServer] [Test worker] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2024-10-15T14:31:40.209+02:00  INFO 31588 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: carService, bean: myCarServiceImpl, class: com.example.myServiceServer.MyCarServiceImpl
+2024-10-15T14:31:40.209+02:00  INFO 31588 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: com.example.MyService, bean: myServiceImpl, class: com.example.myServiceServer.MyServiceImpl
+2024-10-15T14:31:40.209+02:00  INFO 31588 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2024-10-15T14:31:40.209+02:00  INFO 31588 --- [myServiceServer] [Test worker] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2024-10-15T14:31:40.253+02:00  INFO 31588 --- [myServiceServer] [Test worker] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2024-10-15T14:31:40.261+02:00  INFO 31588 --- [myServiceServer] [Test worker] c.e.m.MyServiceServerApplicationTests    : Started MyServiceServerApplicationTests in 0.462 seconds (process running for 0.874)
+2024-10-15T14:31:40.672+02:00  INFO 31588 --- [myServiceServer] [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2024-10-15T14:31:57.276+02:00  INFO 31621 --- [myServiceServer] [main] c.e.m.MyServiceServerApplication         : Starting MyServiceServerApplication v0.0.1-SNAPSHOT using Java 22.0.2 with PID 31621 (/Users/theotime/IdeaProjects/OO-TP/OO-lab-3/myServiceServer/build/libs/myServiceServer-0.0.1-SNAPSHOT.jar started by theotime in /Users/theotime/IdeaProjects/OO-TP/OO-lab-3/myServiceServer)
+2024-10-15T14:31:57.276+02:00 DEBUG 31621 --- [myServiceServer] [main] c.e.m.MyServiceServerApplication         : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-10-15T14:31:57.277+02:00  INFO 31621 --- [myServiceServer] [main] c.e.m.MyServiceServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-15T14:31:57.496+02:00  INFO 31621 --- [myServiceServer] [main] c.e.myServiceServer.MyCarServiceImpl     : Ajout des voitures
+2024-10-15T14:31:57.528+02:00  INFO 31621 --- [myServiceServer] [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2024-10-15T14:31:57.639+02:00  INFO 31621 --- [myServiceServer] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: carService, bean: myCarServiceImpl, class: com.example.myServiceServer.MyCarServiceImpl
+2024-10-15T14:31:57.639+02:00  INFO 31621 --- [myServiceServer] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: com.example.MyService, bean: myServiceImpl, class: com.example.myServiceServer.MyServiceImpl
+2024-10-15T14:31:57.639+02:00  INFO 31621 --- [myServiceServer] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2024-10-15T14:31:57.639+02:00  INFO 31621 --- [myServiceServer] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2024-10-15T14:31:57.698+02:00  INFO 31621 --- [myServiceServer] [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2024-10-15T14:31:57.707+02:00  INFO 31621 --- [myServiceServer] [main] c.e.m.MyServiceServerApplication         : Started MyServiceServerApplication in 0.664 seconds (process running for 0.898)
+2024-10-15T14:32:55.269+02:00  INFO 31621 --- [myServiceServer] [grpc-default-executor-0] c.example.myServiceServer.MyServiceImpl  : sayHello => 
+2024-10-15T14:33:00.602+02:00  INFO 31621 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Trouver toutes les voitures
+2024-10-15T14:33:05.969+02:00  INFO 31621 --- [myServiceServer] [grpc-default-executor-0] c.e.myServiceServer.MyCarServiceImpl     : Trouver la voiture : ren
+2024-10-15T14:36:31.717+02:00  INFO 31621 --- [myServiceServer] [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
